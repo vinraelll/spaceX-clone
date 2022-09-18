@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"> 
+@@include('html/head.html', {
+  "title": "SpaceX"
+})
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+
+      <main class="main">
+        @@include('html/main-page/section-1.html', {})
+        @@include('html/main-page/section-2.html', {})
+        @@include('html/main-page/section-3.html', {})
+        @@include('html/main-page/section-4.html', {})
+        @@include('html/main-page/section-5.html', {})
+      </main>
+      
+      @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

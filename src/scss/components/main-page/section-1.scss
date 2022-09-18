@@ -1,0 +1,101 @@
+.section {
+  position: relative;
+  height: 100vh;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    max-width: 520px;
+
+    &-wrapper {
+      position: relative;
+      height: 100vh;
+      max-width: 1300px;
+      padding: 0 50px;
+      margin: 0 auto;
+    }
+
+    & h4 {
+      font-size: 20px;
+      font-weight: 400;
+      animation: fadeInUp .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+      animation-fill-mode: both;
+    }
+
+    & h2 {
+      margin-bottom: 30px;
+      font-size: 48px;
+      line-height: 1;
+      animation: fadeInUp .4s .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+      animation-fill-mode: both;
+    }
+
+    &-btn {
+      position: relative;
+      display: block;
+      padding: 16px 58px;
+      border: 2px solid #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      z-index: 2;
+      animation: fadeInUp .4s .4s cubic-bezier(0.215, 0.610, 0.355, 1);
+      animation-fill-mode: both;
+
+      &:hover {
+        color: #000;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: -1;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: transform .3s cubic-bezier(0.215, 0.610, 0.355, 1);
+      }
+
+      &:hover::after {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+      }
+    }
+  }
+}
+
+// responsive 
+@include phone {
+  .section {
+    padding: 0;
+
+    &__content {
+      width: auto;
+      min-width: none;
+      left: 20px;
+
+      &-wrapper {
+        padding: 0 20px;
+      }
+    }
+
+    & h2 {
+      font-size: 36px;
+    }
+  }
+}

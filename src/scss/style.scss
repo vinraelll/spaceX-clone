@@ -1,0 +1,12 @@
+// global styles and reset
+@import './global/_reset.scss';
+@import './global/_mixins.scss';
+@import './global/_main.scss';
+@import './global/_fonts.scss';
+
+// main page
+@import './components/header.scss';
+@import './components/aside-menu.scss';
+@import './components/main-page/burger.scss';
+@import './components/main-page/section-1.scss';
+@import './components/footer.scss';
