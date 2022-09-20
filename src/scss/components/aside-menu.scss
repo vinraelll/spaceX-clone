@@ -44,15 +44,15 @@
 
 // responsive 
 @include tablet-desktop {
-  .mobile-menu__items {
-    display: none;
-  }
+  .mobile-menu {
+    overflow-y: scroll;
 
-  .mobile-menu__items--tablet-landscape {
-    display: block;
-  }
-}
-
-@include tablet-landscape {
+    &__items {
+      display: none;
+    }
   
+    &__items--tablet-landscape {
+      display: block;
+    }
+  }
 }

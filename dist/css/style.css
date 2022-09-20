@@ -296,6 +296,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .mobile-menu {
+    overflow-y: scroll;
+  }
   .mobile-menu__items {
     display: none;
   }
@@ -355,7 +358,7 @@ body {
 }
 .section__content {
   position: absolute;
-  bottom: 200px;
+  bottom: 15%;
   left: 50px;
   max-width: 520px;
 }
@@ -382,7 +385,7 @@ body {
 .section__content-btn {
   position: relative;
   display: block;
-  padding: 16px 58px;
+  padding: 16px 45px;
   border: 2px solid #fff;
   font-weight: 600;
   text-transform: uppercase;
@@ -417,7 +420,6 @@ body {
   }
   .section__content {
     width: auto;
-    min-width: none;
     left: 20px;
   }
   .section__content-wrapper {

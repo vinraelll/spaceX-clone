@@ -15,7 +15,7 @@
 
   &__content {
     position: absolute;
-    bottom: 200px;
+    bottom: 15%;
     left: 50px;
     max-width: 520px;
 
@@ -45,7 +45,7 @@
     &-btn {
       position: relative;
       display: block;
-      padding: 16px 58px;
+      padding: 16px 45px;
       border: 2px solid #fff;
       font-weight: 600;
       text-transform: uppercase;
@@ -80,13 +80,20 @@
 }
 
 // responsive 
+// @include tablet-desktop {
+//   section {
+//     &__content {
+//       max-width: 50%;
+//     }
+//   }
+// }
 @include phone {
   .section {
     padding: 0;
 
     &__content {
       width: auto;
-      min-width: none;
+      // min-width: none;
       left: 20px;
 
       &-wrapper {

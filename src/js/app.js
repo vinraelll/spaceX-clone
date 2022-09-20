@@ -4,10 +4,11 @@ const $overlay    = document.getElementById('overlay')
 const $mobileMenu = document.getElementById('mobile')
 
 // Event listeners
-$hamburger.addEventListener('click', openMobile) 
+$hamburger.addEventListener('click', toggleMobile) 
+$overlay.addEventListener('click', toggleMobile)
 
 // Event handlers 
-function openMobile() {
+function toggleMobile() {
   $hamburger.classList.toggle('open')
   $overlay.classList.toggle('overlay-show')
   $mobileMenu.classList.toggle('open')
