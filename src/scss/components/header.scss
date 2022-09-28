@@ -13,7 +13,6 @@
 
   &__inner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
@@ -30,6 +29,8 @@
 }
 
 .nav {
+  margin: 0 auto;
+
   &-item:not(:last-child) {
     margin-right: 24px;
   }
@@ -67,7 +68,7 @@
 .header__shop {
   position: relative;
   padding-bottom: 3px;
-  margin-right: 50px;
+  margin-right: 75px;
   font-weight: bold;
 
   &::after {

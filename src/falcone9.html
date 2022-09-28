@@ -4,10 +4,17 @@
   "title": "Falcone 9"
 })
 <body>
-  @@include('html/header.html', {})
-
-  <main></main>
-  @@include('html/footer.html', {})
-  
+  <div class="overlay" id="overlay"></div>
+  <div class="wrapper" id="wrapper">
+    @@include('html/header.html', {})
+    
+    <main>
+      @@include('html/falcon-9/section-1.html', {})
+      @@include('html/falcon-9/section-stats.html', {})
+    </main>
+    
+    @@include('html/footer.html', {})
+  </div>
+  <script src="js/app.min.js"></script>
 </body>
 </html>

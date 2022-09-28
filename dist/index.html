@@ -4,62 +4,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">  
-  <link rel="stylesheet" href="css/style.min.css?_v=20220923140900">
-  <title>SpaceX</title>                
+  <meta name="description" content="">  <!-- fill in meta description -->
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>SpaceX</title>                <!-- title name is in root index.html file-->
 </head>
   <body>
     <div class="overlay" id="overlay"></div>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <header class="header">
   <div class="header__bg-black"></div>
 
   <div class="header__inner section-inner">
     <a class="logo" href="/">
-      <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="SpaceX logo"></picture>
+      <img src="img/logo.png" alt="SpaceX logo">
     </a>
 
     <nav class="nav">
       <ul class="nav-links">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="falcone9.html">
             Falcon 9
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="">
             Falcon heavy
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="">
             Dragon
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="">
             Starship
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="">
             Human spaceflight
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="">
             Rideshare
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="">
             Starlink
           </a>
         </li>
       </ul>
     </nav>
 
-    <a class="header__shop" href="#">Shop</a>
   </div>
 
   <aside class="mobile-menu" id="mobile">
@@ -83,7 +82,7 @@
 
   <ul class="mobile-menu__items--tablet-landscape">
     <li class="mobile-menu__item">
-      <a class="mobile-menu__link" href="#">Falcon 9</a>
+      <a class="mobile-menu__link" href="falcone9.html">Falcon 9</a>
     </li>
     <li class="mobile-menu__item">
       <a class="mobile-menu__link" href="#">Falcon heavy</a>
@@ -121,18 +120,23 @@
   </ul>
 </aside>
 
-  <button class="header__mobile-menu-btn hamburger" id="hamburger">
-    <span class="hamburger-top"></span>
-    <span class="hamburger-middle"></span>
-    <span class="hamburger-bottom"></span>
-  </button>
+  <div class="header__right-nav">
+    <a class="header__shop" href="#">Shop</a>
+
+    <button class="header__mobile-menu-btn hamburger" id="hamburger">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+  </div>
 </header>
 
       <main class="main">
         <section class="section section-1">
   <h1 class="sr-only visuallyhidden">SpaceX website</h1>
-  <picture><source srcset="img/backgrounds/section-bg1.webp" type="image/webp"><img class="section__background" src="img/backgrounds/section-bg1.webp" alt="Rocket launching on the background"></picture>
-
+  <img class="section__background" src="img/backgrounds/section-bg1.webp" alt="Rocket launching on the background">
+  <div class="black-overlay"></div>
+  
   <div class="section__content-wrapper">
     <div class="section__content">
       <h4>Upcoming launch</h4>
@@ -153,7 +157,7 @@
   </div>
 </section>
         <section class="section section-2">
-  <picture><source srcset="img/backgrounds/section-bg2.webp" type="image/webp"><img class="section__background" src="img/backgrounds/section-bg2.webp" alt="Rocket launching on the background"></picture>
+  <img class="section__background" src="img/backgrounds/section-bg2.webp" alt="Rocket launching on the background">
 
   <div class="section__content-wrapper">
     <div class="section__content">
@@ -174,7 +178,7 @@
   </div>
 </section>
         <section class="section section-3">
-  <picture><source srcset="img/backgrounds/section-bg3.webp" type="image/webp"><img class="section__background" src="img/backgrounds/section-bg3.webp" alt="Rocket launching on the background"></picture>
+  <img class="section__background" src="img/backgrounds/section-bg3.webp" alt="Rocket launching on the background">
 
   <div class="section__content-wrapper">
     <div class="section__content">
@@ -195,7 +199,7 @@
   </div>
 </section>
         <section class="section section-4">
-  <picture><source srcset="img/backgrounds/section-bg4.webp" type="image/webp"><img class="section__background" src="img/backgrounds/section-bg4.webp" alt="Rocket launching on the background"></picture>
+  <img class="section__background" src="img/backgrounds/section-bg4.webp" alt="Rocket launching on the background">
 
   <div class="section__content-wrapper">
     <div class="section__content">
@@ -217,7 +221,7 @@
   </div>
 </section>
         <section class="section section-5">
-  <picture><source srcset="img/backgrounds/section-bg5.webp" type="image/webp"><img class="section__background" src="img/backgrounds/section-bg5.webp" alt="Rocket launching on the background"></picture>
+  <img class="section__background" src="img/backgrounds/section-bg5.webp" alt="Rocket launching on the background">
 
   <div class="section__content-wrapper">
     <div class="section__content">
@@ -258,6 +262,6 @@
   </ul>
 </footer>
     </div>
-    <script src="js/app.min.js?_v=20220923140900"></script>
+    <script src="js/app.min.js"></script>
   </body>
 </html>

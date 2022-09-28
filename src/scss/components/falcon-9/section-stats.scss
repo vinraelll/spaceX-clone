@@ -1,0 +1,20 @@
+.stats {
+  text-align: center;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 30%;
+
+    &-count {
+      font-size: 125px;
+    }
+
+    &-text {
+      font-size: 22px;
+    }
+  }
+}

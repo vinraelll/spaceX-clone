@@ -7,9 +7,9 @@ body {
   color: #fff;
 }
 
-.wrapper {
-  animation: overlay 2s cubic-bezier(0.215, 0.610, 0.355, 1)
-}
+// .wrapper {
+//   animation: overlay 2s cubic-bezier(0.215, 0.610, 0.355, 1)
+// }
 
 .section {
   &-inner {
@@ -43,7 +43,11 @@ body {
 
 // forbidding scroll when aside menu  is active (burger) //
 .scrollLock { 
-  overflow: hidden; 
+  position: relative;
+  height: 100%; 
+  overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
 .overlay {
@@ -61,6 +65,7 @@ body {
   &-show {
     visibility: visible;
     opacity: 1;
+    z-index: 5;
   }
 }
 
@@ -78,11 +83,27 @@ body {
   border: 0;
 }
 
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  z-index: 4;
+  animation: fadeOutOverlay 1.3s .7s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation-fill-mode: both;
+}
+
 // animations 
 @keyframes overlay {
   0% {
     opacity: 0;
     background-color: #000;
+  }
+
+  30% {
+    opacity: 0;
   }
 
   100% {
@@ -115,6 +136,16 @@ body {
   40% {
     opacity: 1;
     transform: translate(-50%, 0);;
+  }
+}
+
+@keyframes fadeOutOverlay {
+  100% {
+    opacity: 0;
+  }
+
+  0% {
+    opacity: 1;
   }
 }
 
