@@ -18,3 +18,33 @@
     }
   }
 }
+
+// responsive
+
+@include tablet-landscape {
+  .stats {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 40%;
+
+      &-count {
+        font-size: 114px;
+      }
+
+      &-text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include phone {
+  .stats {
+    &__item {
+      width: 100%;
+    }
+  }
+}

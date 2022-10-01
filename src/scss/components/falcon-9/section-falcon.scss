@@ -22,3 +22,28 @@
     animation-fill-mode: both;
   }
 }
+
+// responsive
+@include tablet-portrait {
+  .section__falcon {
+    &-title {
+      font-size: 80px;
+    }
+
+    &-desc {
+      font-size: 16px;
+    }
+  }
+}
+
+@include phone {
+  .section__falcon {
+    &-title {
+      font-size: 60px;
+    }
+
+    &-desc {
+      font-size: 12px;
+    }
+  }
+}

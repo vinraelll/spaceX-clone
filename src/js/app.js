@@ -29,6 +29,12 @@ function scrollPage() {
     resetFalcoStats()
     scrollFlag = false
   }
+
+  console.log(scrollPos, window.scrollY);
+  // for header
+  if (scrollPos > window.scrollY) {
+    console.log('up!');
+  }
 }
 
 function resetFalcoStats() {
@@ -63,5 +69,3 @@ function updateFalconStats() {
     updateCounter() 
   })
 }
-
-updateFalconStats()

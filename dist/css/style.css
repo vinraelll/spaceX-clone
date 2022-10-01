@@ -515,6 +515,22 @@ body {
   animation-fill-mode: both;
 }
 
+@media (max-width: 768px) {
+  .section__falcon-title {
+    font-size: 80px;
+  }
+  .section__falcon-desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .section__falcon-title {
+    font-size: 60px;
+  }
+  .section__falcon-desc {
+    font-size: 12px;
+  }
+}
 .stats {
   text-align: center;
 }
@@ -530,4 +546,24 @@ body {
 }
 .stats__item-text {
   font-size: 22px;
+}
+
+@media (max-width: 960px) {
+  .stats__inner {
+    flex-wrap: wrap;
+  }
+  .stats__item {
+    width: 40%;
+  }
+  .stats__item-count {
+    font-size: 114px;
+  }
+  .stats__item-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 600px) {
+  .stats__item {
+    width: 100%;
+  }
 }
